@@ -1,0 +1,6 @@
+{
+    "random_seed": 2025,
+    "no_trials": 40,
+    "step": [1, 3],
+    "priceEncouragement" :[0.01, 1.0]
+}
