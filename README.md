@@ -12,8 +12,8 @@ In market making, one common approach to liquidity provision involves simultaneo
 
 ## Hypothesis
 We place bid and ask prices with our formula:
-- $$\text{bid} = P - \text{step} \times \left(1 + \frac{\text{Inventory}}{\text{PositionLimit}} \times \text{PriceEncouragement} \times F_{\text{inv}}\right)$$
-- $$\text{ask} = P + \text{step} \times \left(1 - \frac{\text{Inventory}}{\text{PositionLimit}} \times \text{PriceEncouragement} \times F_{\text{inv}}\right)$$
+\text{bid} = P - \text{step} \times \left(1 + \frac{\text{Inventory}}{\text{PositionLimit}} \times \text{PriceEncouragement}\right)
+\text{ask} = P + \text{step} \times \left(1 - \frac{\text{Inventory}}{\text{PositionLimit}} \times \text{PriceEncouragement}\right)
 
 Where:  
 - \(P\) — Reference price  
@@ -168,4 +168,5 @@ python evaluation.py
 
 ## Reference
 [1] ALGOTRADE, Algorithmic Trading Theory and Practice - A Practical Guide with Applications on the Vietnamese Stock Market, 1st ed. DIMI BOOK, 2023, pp. 52–53. Accessed: May 12, 2025. [Online]. Available: [Link](https://hub.algotrade.vn/knowledge-hub/market-making-strategy/)
+
 [2] Feng, Y., Yu, R., & Stone, P., “Two Stock-Trading Agents: Market Making and Technical Analysis,” International Workshop on Agent-Mediated Electronic Commerce, Berlin, Heidelberg: Springer Berlin Heidelberg, July 2003, pp. 18–36. Accessed: Aug. 10, 2025. [Online]. Available: [Link](https://link.springer.com/chapter/10.1007/978-3-540-25947-3_2)
