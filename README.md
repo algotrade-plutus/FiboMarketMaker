@@ -12,14 +12,7 @@ In market making, one common approach to liquidity provision involves simultaneo
 
 ## Hypothesis
 We place bid and ask prices with our formula:
-\text{bid} = P - \text{step} \times \left(1 + \frac{\text{Inventory}}{\text{PositionLimit}} \times \text{PriceEncouragement}\right)
-\text{ask} = P + \text{step} \times \left(1 - \frac{\text{Inventory}}{\text{PositionLimit}} \times \text{PriceEncouragement}\right)
 
-Where:  
-- \(P\) — Reference price  
-- **Inventory** — Current position size (positive for long, negative for short)  
-- **PositionLimit** — Maximum allowed absolute inventory  
-- **PriceEncouragement** — Factor encouraging inventory balancing  
 - 
 
 $$
@@ -29,6 +22,12 @@ $$
 $$
 \text{ask} = P + \text{step} \times \left(1 - \frac{\text{Inventory}}{\text{PositionLimit}} \times \text{PriceEncouragement}\right)
 $$
+
+Where:  
+- \(P\) — Reference price  
+- **Inventory** — Current position size (positive for long, negative for short)  
+- **PositionLimit** — Maximum allowed absolute inventory  
+- **PriceEncouragement** — Factor encouraging inventory balancing  
 - **step** — Minimum price increment  
 
 The step size should exceed the sum of the transaction fee and slippage. Bid and ask prices are updated either every 15 seconds or upon the execution of a position.
