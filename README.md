@@ -20,7 +20,9 @@ Where:
 - **Inventory** — Current position size (positive for long, negative for short)  
 - **PositionLimit** — Maximum allowed absolute inventory  
 - **PriceEncouragement** — Factor encouraging inventory balancing  
-- $$
+- 
+
+$$
 \text{bid} = P - \text{step} \times \left(1 + \frac{\text{Inventory}}{\text{PositionLimit}} \times \text{PriceEncouragement}\right)
 $$
 
