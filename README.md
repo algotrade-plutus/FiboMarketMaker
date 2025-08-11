@@ -20,10 +20,13 @@ Where:
 - **Inventory** — Current position size (positive for long, negative for short)  
 - **PositionLimit** — Maximum allowed absolute inventory  
 - **PriceEncouragement** — Factor encouraging inventory balancing  
-- \(F_{\text{inv}}\) — Fibonacci multiplier based on inventory size:  
-  \[
-  f_{\text{index}} = \max\left(\min(|\text{Inventory}| - 1, \text{len(fibo)} - 1), 0\right)
-  \]  
+- $$
+\text{bid} = P - \text{step} \times \left(1 + \frac{\text{Inventory}}{\text{PositionLimit}} \times \text{PriceEncouragement}\right)
+$$
+
+$$
+\text{ask} = P + \text{step} \times \left(1 - \frac{\text{Inventory}}{\text{PositionLimit}} \times \text{PriceEncouragement}\right)
+$$
 - **step** — Minimum price increment  
 
 The step size should exceed the sum of the transaction fee and slippage. Bid and ask prices are updated either every 15 seconds or upon the execution of a position.
