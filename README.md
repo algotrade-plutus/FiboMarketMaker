@@ -159,8 +159,8 @@ python evaluation.py
 ```
 | Metric                 | Value                              |
 |------------------------|------------------------------------|
-| Sharpe Ratio           | 0.06738                            |
-| Sortino Ratio          | 0.2521                             |
+| Sharpe Ratio           | 1.06546                            |
+| Sortino Ratio          | 3.98621                            |
 | Maximum Drawdown (MDD) | -0.1503                            |
 ```
 - The NAV chart. The chart is located at `result/optimization/nav.png`.
